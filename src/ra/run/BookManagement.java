@@ -114,7 +114,7 @@ public class BookManagement {
     private static void sortInterset() {
         for (int i=0;i<id-1;i++){
             for (int j = i+1;j<id;j++){
-                if(books[j].getInterest()<books[i].getInterest()){
+                if(books[j].getInterest()>books[i].getInterest()){
                     Book temp = books[j];
                     books[j]=books[i];
                     books[i]=temp;
